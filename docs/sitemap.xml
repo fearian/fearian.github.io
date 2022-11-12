@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>https://fearian.github.io/fearian/posts/examplepost/</loc>
+    <lastmod>2022-11-12T14:16:17+00:00</lastmod>
+  </url><url>
+    <loc>https://fearian.github.io/fearian/</loc>
+    <lastmod>2022-11-12T14:16:17+00:00</lastmod>
+  </url><url>
+    <loc>https://fearian.github.io/fearian/posts/</loc>
+    <lastmod>2022-11-12T14:16:17+00:00</lastmod>
+  </url><url>
+    <loc>https://fearian.github.io/fearian/tags/</loc>
+    <lastmod>2022-11-12T14:16:17+00:00</lastmod>
+  </url><url>
+    <loc>https://fearian.github.io/fearian/tags/untagged/</loc>
+    <lastmod>2022-11-12T14:16:17+00:00</lastmod>
+  </url><url>
+    <loc>https://fearian.github.io/fearian/blog/</loc>
+  </url><url>
+    <loc>https://fearian.github.io/fearian/series/</loc>
+  </url>
+</urlset>

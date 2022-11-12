@@ -1,8 +1,9 @@
-baseurl      = "localhost"
+baseurl      = "https://fearian.github.io/fearian"
 title        = "Fearian"
 languageCode = "en-uk"
 theme        = "hello-friend-ng"
 paginate     = 10
+publishDir   = "docs"
 
 [params]
   dateform        = "2 Jan, 2006"
