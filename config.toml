@@ -1,4 +1,4 @@
-baseurl      = "https://fearian.github.io/fearian"
+baseurl      = "https://fearian.github.io/"
 title        = "Fearian"
 languageCode = "en-uk"
 theme        = "hello-friend-ng"
