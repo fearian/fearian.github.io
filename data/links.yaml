@@ -1,0 +1,32 @@
+---
+links:
+  - name: "Portfolio"
+    link: "https://www.fearian.com/"
+    icon: "home"
+  - name: "Mastodon"
+    link: "https://mastodon.gamedev.place/@fearian"
+    icon: "mastodon"
+  - name: "Twitter"
+    link: "https://www.twitter.com/fearian"
+    icon: "twitter"
+  - name: "Youtube"
+    link: "https://www.youtube.com/fearian"
+    icon: "youtube"
+  - name: "Email"
+    link: "mailto:ian@fearian.com"
+    icon: "email"  
+  - name: "Links"
+    link: "https://links.fearian.com/"
+    icon: "link"
+---
+
+{
+  "Portfolio": {
+    link: "https://www.fearian.com/",
+    icon: "home"
+  },
+  "Mastodon": {
+    link: "https://mastodon.gamedev.place/@fearian",
+    icon: "mastodon"
+  }
+}

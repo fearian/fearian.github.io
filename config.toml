@@ -4,6 +4,7 @@ languageCode = "en-uk"
 theme        = "hello-friend-ng"
 paginate     = 10
 publishDir   = "docs"
+features = ["social icons"]
 
 [params]
   defaultTheme = "dark"
@@ -14,8 +15,31 @@ publishDir   = "docs"
   dateformNum     = "2006-01-02"
   dateformNumTime = "2006-01-02 15:04"
 
+
   # Subtitle for home
   homeSubtitle = "Here's where you can find me on the web:"
+
+
+  [[params.social]]
+    name = "link"
+    title = "Portfolio"
+    url = "http://fearian.com/"
+  [[params.social]]
+  name = "twitter"
+  title = "Twitter"
+  url = "https://twitter.com/fearian"
+  [[params.social]]
+    name = "mastodon"
+    title = "Mastodon"
+    url = "https://mastodon.gamedev.place/@fearian"
+  [[params.social]]
+    name = "youtube"
+    title = "YouTube"
+    url = "https://youtube.com/fearian"
+  [[params.social]]
+    name = "github"
+    title = "GitHub"
+    url = "https://github.com/fearian"
 
   # Set disableReadOtherPosts to true in order to hide the links to other posts.
   disableReadOtherPosts = false
@@ -35,7 +59,7 @@ publishDir   = "docs"
 
 [languages]
   [languages.en]
-    title = "Hello, I'm Ian."
+    title = "@fearian"
     subtitle = "Here's where you can find me on the web:"
     keywords = ""
     copyright = '<a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener">CC BY-NC 4.0</a>'
