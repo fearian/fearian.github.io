@@ -2,14 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://fearian.github.io/blog/</loc>
+    <loc>uildDrafts/</loc>
+    <priority>0</priority>
   </url><url>
-    <loc>https://fearian.github.io/</loc>
+    <loc>uildDrafts/blog/</loc>
   </url><url>
-    <loc>https://fearian.github.io/series/</loc>
+    <loc>uildDrafts/series/</loc>
   </url><url>
-    <loc>https://fearian.github.io/tags/</loc>
-  </url><url>
-    <loc>https://fearian.github.io/test/</loc>
+    <loc>uildDrafts/tags/</loc>
   </url>
 </urlset>
