@@ -1,0 +1,56 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>Posts on @fearian</title>
+        <link>https://fearian.github.io/posts/</link>
+        <description>Recent content in Posts on @fearian</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>en-uk</language>
+        <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
+        <lastBuildDate>Tue, 15 Nov 2022 19:54:20 +0000</lastBuildDate>
+        <atom:link href="https://fearian.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+        
+        <item>
+            <title>How I Made This Website</title>
+            <link>https://fearian.github.io/posts/how-i-made-this-website/</link>
+            <pubDate>Tue, 15 Nov 2022 19:54:20 +0000</pubDate>
+            
+            <guid>https://fearian.github.io/posts/how-i-made-this-website/</guid>
+            <description>I am not a web developer. The last time I made a website for myself, I took out a CSS textbook from my University library, and built it in notepad.exe. Recently I catch glimpses of the web development world through fireship.io YouTube videos. They scare me.
+But I do like markdown and YAML. I actually love using markdown for all my note-taking. So when I started getting curious about creating a landing page for myself - with the discourse of an impending twitter diaspora in mind - I remembered hearing about HuGo; A &amp;ldquo;Static Site Generator&amp;rdquo; that would turn markdown files into pages.</description>
+            <content type="html"><![CDATA[<p>I am not a web developer. The last time I made a website for myself, I took out a CSS textbook from my University library, and built it in notepad.exe. Recently I catch glimpses of the web development world through <a href="https://youtu.be/pEfrdAtAmqk">fireship.io YouTube videos</a>. They scare me.</p>
+<p>But I do like markdown and YAML. I actually <a href="https://obsidian.md/">love using markdown for all my note-taking</a>. So when I started getting curious about creating a landing page for myself - with the discourse of an impending twitter diaspora in mind - I remembered hearing about HuGo; A &ldquo;Static Site Generator&rdquo; that would turn markdown files into pages. Much more my speed, if I can just get over the setup hurdle.</p>
+<p>The first-page-result tutorial I found was <a href="https://4bes.nl/2021/08/29/create-a-website-with-hugo-and-github-pages/">&ldquo;Create a website with Hugo and GitHub Pages&rdquo;</a>, which got me up and running shockingly fast. If you want to set up a simple website yourself, I can recommend HUGO and GitHub for quick results! However, as a non-developer, I tripped over several paint points. If you, like me, fall into the band of &ldquo;familiar with git, but never touched a terminal&rdquo; or &ldquo;Game Dev not Web Dev&rdquo;, then I&rsquo;ve made note of some things that would be handy to have had open in a second tab.</p>
+<h3 id="install-hugo-using-a-terminal">Install Hugo&hellip; Using a terminal?</h3>
+<p>Assuming you follow the tutorial pre-requisites and have VS Code, Git, and GitHub setup, your first speedbump might be installing Hugo through a terminal on windows.</p>
+<p>I advise downloading the pre-built binaries from <a href="https://github.com/gohugoio/hugo/releases/latest">here</a>, taking care to grab the <em>extended</em> build for your platform. Don&rsquo;t worry about &ldquo;path variables&rdquo; if this is a strange term to you. After creating my empty git project, I placed <code>hugo.exe</code> in the root of the project directory and in VS Code opened the terminal with <code>Ctrl + '</code>. Here you can follow along with tutorial commands by prefixing your inputs with <code>.\</code>, e.g. <code>.\hugo new site .\ --force</code>.</p>
+<h3 id="install-a-theme-but-not-that-one">Install a theme&hellip; But not that one!</h3>
+<p>Setting up a theme is pretty simple. Just place it in the themes folder, make some small changes to <code>config.toml</code> and boom! However making edits to a theme is just <strong>full-on front-end development.</strong> Behind the scenes it&rsquo;s CSS, Post CSS, or SASS. Tailwind, Bootstrap, Netlify? Forestry? And obviously, the whole thing is coded in a mix of HTML 5 and Go that my editor doesn&rsquo;t know what to do with.</p>
+<p>My mistake was thinking that I could take elements from one theme, and add them to another. If you are not familiar with the names I threw out in the previous paragraph, then transplanting elements from one theme to another is going to be significant surgery.</p>
+<p>The &ldquo;hello-friend-ng&rdquo; theme itself is a modification of two other existing themes. So I had to bounce between three GitHub pages to check the documentation for each. It might be &ldquo;one of the most popular blog themes at the time of writing&rdquo;, according to our guide, but that means popular with people who know what they&rsquo;re doing.</p>
+<p>I advise taking a few hours to <a href="https://themes.gohugo.io/">try out different themes</a> to find something that uses a minimal amount of external libraries and JavaScript, or at least is very close to the functionality you are looking for.</p>
+<p><img src="../../static/images/posts/hugo-themes.PNG" alt="Hugo Themes">
+<em>It&rsquo;s like building a wordpress site in 2004 all over again</em></p>
+<h2 id="submodules-and-theme-overrides">Submodules and theme overrides</h2>
+<p>The tutorial I followed, and the readme on many themes, will recommend adding your chosen theme as a submodule to the git repo of your site. This is very useful as a fire and forget way to get any future updates to the theme by pulling any changes to the submodule. However, if your not Git CLI proficient and you want to hack the theme later, you might find this hard to undo, especially without loosing any changes you made to the theme!</p>
+<p>A quick tip to get the best of both worlds is to fork the theme to your own github account. A detailed guide on exactly this by Andrew Hoog <a href="https://www.andrewhoog.com/post/git-submodule-for-hugo-themes/">can be found here</a>.</p>
+<p>Atlassian has a nice article that collates <a href="https://www.atlassian.com/git/articles/core-concept-workflows-and-tips">a lot of useful Stack Overflow answers regarding submodules here</a>. If you already have installed a theme as a submodule, and want to replace that with your own fork (as I did) Here&rsquo;s the useful bit:</p>
+<blockquote>
+<h2 id="how-to-swap-a-git-submodule-with-your-own-fork">How to swap a git submodule with your own fork</h2>
+<p>This is a very common workflow: you start using someone else&rsquo;s project as submodule but then after a while you find the need to customize it and tweak it yourself, so you want to fork the project and replace the submodule with your own fork. How is that done?</p>
+<p>The submodules are stored in .gitmodules:</p>
+<pre tabindex="0"><code>$ cat .gitmodules [submodule &#34;ext/google-maps&#34;] path = ext/google-maps url = git://git.naquadah.org/google-maps.git
+</code></pre><p>You can just edit the url with a text editor and then run the following:</p>
+<pre tabindex="0"><code>$ git submodule sync
+</code></pre><p>This updates .git/config which contains a copy of this submodule list (you could also just edit the relevant [submodule] section of .git/config manually).</p>
+</blockquote>
+<p>At this point, it&rsquo;s worth watching some breakdown on how HuGo sites are structured, and how the different layout elements like Partials, Posts, and Shortcodes work to generate your site. An important thing to know is that if you want to change how any of these elements work, you don&rsquo;t need to work destructively on the theme. It&rsquo;s possible to copy partials or CSS you want to change into override folders.</p>
+<h2 id="why-bother-or-web-dev-is-the-new-ui-design">Why bother? or, Web dev is the new UI design.</h2>
+<p>&ldquo;Do I really have the time to be spending a week wrapping my head around Hugo and SASS, just to avoid making a linktree account?&rdquo; Was a thought that came to mind while googling some fairly basic yet confusing CSS concepts. But just a few weeks later I found myself checking out Unity&rsquo;s new UI Builder toolset that started as a way to build editor tools, but is now expanded for runtime use. If you have built UI for applications recently this won&rsquo;t be a surprise, but it&rsquo;s all CSS. It even utilises the same, insanely helpful, browser visualisation of Margins, Borders and Padding.</p>
+<p><img src="../../static/images/posts/UIBuilderAnnotatedMainWindow.png" alt="Modern UI tools look more like the Developer panel in chrome or firefox">
+<em>Interface Overview from the <a href="https://docs.unity3d.com/Packages/com.unity.ui.builder@1.0/manual/uib-interface-overview.html">UI Builder 1.0.0 Documentation</a></em></p>
+<p>And beyond that, maybe I should get at least a little bit less afraid of using a terminal.</p>
+]]></content>
+        </item>
+        
+    </channel>
+</rss>
