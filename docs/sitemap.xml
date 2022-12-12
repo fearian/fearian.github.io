@@ -3,12 +3,26 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://fearian.github.io/</loc>
+    <lastmod>2022-11-15T19:54:20+00:00</lastmod>
     <priority>0</priority>
+  </url><url>
+    <loc>https://fearian.github.io/tags/git/</loc>
+    <lastmod>2022-11-15T19:54:20+00:00</lastmod>
+  </url><url>
+    <loc>https://fearian.github.io/posts/how-i-made-this-website/</loc>
+    <lastmod>2022-11-15T19:54:20+00:00</lastmod>
+  </url><url>
+    <loc>https://fearian.github.io/tags/meta/</loc>
+    <lastmod>2022-11-15T19:54:20+00:00</lastmod>
+  </url><url>
+    <loc>https://fearian.github.io/posts/</loc>
+    <lastmod>2022-11-15T19:54:20+00:00</lastmod>
+  </url><url>
+    <loc>https://fearian.github.io/tags/</loc>
+    <lastmod>2022-11-15T19:54:20+00:00</lastmod>
   </url><url>
     <loc>https://fearian.github.io/blog/</loc>
   </url><url>
     <loc>https://fearian.github.io/series/</loc>
-  </url><url>
-    <loc>https://fearian.github.io/tags/</loc>
   </url>
 </urlset>

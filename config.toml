@@ -17,7 +17,7 @@ features = ["social icons"]
 
 
   # Subtitle for home
-  homeSubtitle = "Here's where you can find me on the web:"
+  homeSubtitle = "Here's where you can find me on the world wide web"
 
 
   [[params.social]]
@@ -60,7 +60,7 @@ features = ["social icons"]
 [languages]
   [languages.en]
     title = "@fearian"
-    subtitle = "Here's where you can find me on the web:"
+    subtitle = "Here's where you can find me on the world wide web"
     keywords = ""
     copyright = '<a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener">CC BY-NC 4.0</a>'
     readOtherPosts = "Read other posts"
