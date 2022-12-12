@@ -28,25 +28,25 @@ But I do like markdown and YAML. I actually love using markdown for all my note-
 <p>My mistake was thinking that I could take elements from one theme, and add them to another. If you are not familiar with the names I threw out in the previous paragraph, then transplanting elements from one theme to another is going to be significant surgery.</p>
 <p>The &ldquo;hello-friend-ng&rdquo; theme itself is a modification of two other existing themes. So I had to bounce between three GitHub pages to check the documentation for each. It might be &ldquo;one of the most popular blog themes at the time of writing&rdquo;, according to our guide, but that means popular with people who know what they&rsquo;re doing.</p>
 <p>I advise taking a few hours to <a href="https://themes.gohugo.io/">try out different themes</a> to find something that uses a minimal amount of external libraries and JavaScript, or at least is very close to the functionality you are looking for.</p>
-<p><img src="../../static/images/posts/hugo-themes.PNG" alt="Hugo Themes">
-<em>It&rsquo;s like building a wordpress site in 2004 all over again</em></p>
+<p><img src="/images/posts/hugo-themes.PNG" alt="Hugo Themes">
+<em>It&rsquo;s like building a WordPress site in 2004 all over again</em></p>
 <h2 id="submodules-and-theme-overrides">Submodules and theme overrides</h2>
 <p>The tutorial I followed, and the readme on many themes, will recommend adding your chosen theme as a submodule to the git repo of your site. This is very useful as a fire and forget way to get any future updates to the theme by pulling any changes to the submodule. However, if your not Git CLI proficient and you want to hack the theme later, you might find this hard to undo, especially without loosing any changes you made to the theme!</p>
-<p>A quick tip to get the best of both worlds is to fork the theme to your own github account. A detailed guide on exactly this by Andrew Hoog <a href="https://www.andrewhoog.com/post/git-submodule-for-hugo-themes/">can be found here</a>.</p>
+<p>A quick tip to get the best of both worlds is to fork the theme to your own GitHub account. A detailed guide on exactly this by Andrew Hoog <a href="https://www.andrewhoog.com/post/git-submodule-for-hugo-themes/">can be found here</a>.</p>
 <p>Atlassian has a nice article that collates <a href="https://www.atlassian.com/git/articles/core-concept-workflows-and-tips">a lot of useful Stack Overflow answers regarding submodules here</a>. If you already have installed a theme as a submodule, and want to replace that with your own fork (as I did) Here&rsquo;s the useful bit:</p>
 <blockquote>
-<h2 id="how-to-swap-a-git-submodule-with-your-own-fork">How to swap a git submodule with your own fork</h2>
+<h3 id="how-to-swap-a-git-submodule-with-your-own-fork">How to swap a git submodule with your own fork</h3>
 <p>This is a very common workflow: you start using someone else&rsquo;s project as submodule but then after a while you find the need to customize it and tweak it yourself, so you want to fork the project and replace the submodule with your own fork. How is that done?</p>
 <p>The submodules are stored in .gitmodules:</p>
 <pre tabindex="0"><code>$ cat .gitmodules [submodule &#34;ext/google-maps&#34;] path = ext/google-maps url = git://git.naquadah.org/google-maps.git
-</code></pre><p>You can just edit the url with a text editor and then run the following:</p>
+</code></pre><p>You can just edit the URL with a text editor and then run the following:</p>
 <pre tabindex="0"><code>$ git submodule sync
 </code></pre><p>This updates .git/config which contains a copy of this submodule list (you could also just edit the relevant [submodule] section of .git/config manually).</p>
 </blockquote>
 <p>At this point, it&rsquo;s worth watching some breakdown on how HuGo sites are structured, and how the different layout elements like Partials, Posts, and Shortcodes work to generate your site. An important thing to know is that if you want to change how any of these elements work, you don&rsquo;t need to work destructively on the theme. It&rsquo;s possible to copy partials or CSS you want to change into override folders.</p>
 <h2 id="why-bother-or-web-dev-is-the-new-ui-design">Why bother? or, Web dev is the new UI design.</h2>
-<p>&ldquo;Do I really have the time to be spending a week wrapping my head around Hugo and SASS, just to avoid making a linktree account?&rdquo; Was a thought that came to mind while googling some fairly basic yet confusing CSS concepts. But just a few weeks later I found myself checking out Unity&rsquo;s new UI Builder toolset that started as a way to build editor tools, but is now expanded for runtime use. If you have built UI for applications recently this won&rsquo;t be a surprise, but it&rsquo;s all CSS. It even utilises the same, insanely helpful, browser visualisation of Margins, Borders and Padding.</p>
-<p><img src="../../static/images/posts/UIBuilderAnnotatedMainWindow.png" alt="Modern UI tools look more like the Developer panel in chrome or firefox">
+<p>&ldquo;Do I really have the time to be spending a week wrapping my head around Hugo and SASS, just to avoid making a Linktree account?&rdquo; Was a thought that came to mind while googling some fairly basic yet confusing CSS concepts. But just a few weeks later I found myself checking out Unity&rsquo;s new UI Builder toolset that started as a way to build editor tools, but is now expanded for runtime use. If you have built UI for applications recently this won&rsquo;t be a surprise, but it&rsquo;s all CSS. It even utilises the same, insanely helpful, browser visualisation of Margins, Borders and Padding.</p>
+<p><img src="/images/posts/UIBuilderAnnotatedMainWindow.png" alt="Modern UI tools look more like the Developer panel in chrome or Firefox">
 <em>Interface Overview from the <a href="https://docs.unity3d.com/Packages/com.unity.ui.builder@1.0/manual/uib-interface-overview.html">UI Builder 1.0.0 Documentation</a></em></p>
 <p>And beyond that, maybe I should get at least a little bit less afraid of using a terminal.</p>
 ]]></content>
