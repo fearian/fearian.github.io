@@ -30,14 +30,14 @@ The "hello-friend-ng" theme itself is a modification of two other existing theme
 
 I advise taking a few hours to [try out different themes](https://themes.gohugo.io/) to find something that uses a minimal amount of external libraries and JavaScript, or at least is very close to the functionality you are looking for.
 
-![Hugo Themes](../../static/images/posts/hugo-themes.PNG)
-*It's like building a wordpress site in 2004 all over again*
+![Hugo Themes](/images/posts/hugo-themes.PNG)
+*It's like building a WordPress site in 2004 all over again*
 
 ## Submodules and theme overrides
 
 The tutorial I followed, and the readme on many themes, will recommend adding your chosen theme as a submodule to the git repo of your site. This is very useful as a fire and forget way to get any future updates to the theme by pulling any changes to the submodule. However, if your not Git CLI proficient and you want to hack the theme later, you might find this hard to undo, especially without loosing any changes you made to the theme!
 
-A quick tip to get the best of both worlds is to fork the theme to your own github account. A detailed guide on exactly this by Andrew Hoog [can be found here](https://www.andrewhoog.com/post/git-submodule-for-hugo-themes/).
+A quick tip to get the best of both worlds is to fork the theme to your own GitHub account. A detailed guide on exactly this by Andrew Hoog [can be found here](https://www.andrewhoog.com/post/git-submodule-for-hugo-themes/).
 
 Atlassian has a nice article that collates [a lot of useful Stack Overflow answers regarding submodules here](https://www.atlassian.com/git/articles/core-concept-workflows-and-tips). If you already have installed a theme as a submodule, and want to replace that with your own fork (as I did) Here's the useful bit:
 
@@ -49,7 +49,7 @@ Atlassian has a nice article that collates [a lot of useful Stack Overflow answe
 >```
 >$ cat .gitmodules [submodule "ext/google-maps"] path = ext/google-maps url = git://git.naquadah.org/google-maps.git
 >```
->You can just edit the url with a text editor and then run the following:
+>You can just edit the URL with a text editor and then run the following:
 >
 >```
 >$ git submodule sync
@@ -61,9 +61,9 @@ At this point, it's worth watching some breakdown on how HuGo sites are structur
 
 ## Why bother? or, Web dev is the new UI design.
 
-"Do I really have the time to be spending a week wrapping my head around Hugo and SASS, just to avoid making a linktree account?" Was a thought that came to mind while googling some fairly basic yet confusing CSS concepts. But just a few weeks later I found myself checking out Unity's new UI Builder toolset that started as a way to build editor tools, but is now expanded for runtime use. If you have built UI for applications recently this won't be a surprise, but it's all CSS. It even utilises the same, insanely helpful, browser visualisation of Margins, Borders and Padding.
+"Do I really have the time to be spending a week wrapping my head around Hugo and SASS, just to avoid making a Linktree account?" Was a thought that came to mind while googling some fairly basic yet confusing CSS concepts. But just a few weeks later I found myself checking out Unity's new UI Builder toolset that started as a way to build editor tools, but is now expanded for runtime use. If you have built UI for applications recently this won't be a surprise, but it's all CSS. It even utilises the same, insanely helpful, browser visualisation of Margins, Borders and Padding.
 
-![Modern UI tools look more like the Developer panel in chrome or firefox](../../static/images/posts/UIBuilderAnnotatedMainWindow.png)
+![Modern UI tools look more like the Developer panel in chrome or Firefox](/images/posts/UIBuilderAnnotatedMainWindow.png)
 *Interface Overview from the [UI Builder 1.0.0 Documentation](https://docs.unity3d.com/Packages/com.unity.ui.builder@1.0/manual/uib-interface-overview.html)*
 
 And beyond that, maybe I should get at least a little bit less afraid of using a terminal.
