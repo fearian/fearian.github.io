@@ -41,7 +41,7 @@ A quick tip to get the best of both worlds is to fork the theme to your own gith
 
 Atlassian has a nice article that collates [a lot of useful Stack Overflow answers regarding submodules here](https://www.atlassian.com/git/articles/core-concept-workflows-and-tips). If you already have installed a theme as a submodule, and want to replace that with your own fork (as I did) Here's the useful bit:
 
->## How to swap a git submodule with your own fork
+>### How to swap a git submodule with your own fork
 >This is a very common workflow: you start using someone else's project as submodule but then after a while you find the need to customize it and tweak it yourself, so you want to fork the project and replace the submodule with your own fork. How is that done?
 >
 >The submodules are stored in .gitmodules:
@@ -55,6 +55,7 @@ Atlassian has a nice article that collates [a lot of useful Stack Overflow answe
 >$ git submodule sync
 >```
 >This updates .git/config which contains a copy of this submodule list (you could also just edit the relevant [submodule] section of .git/config manually).
+>
 
 At this point, it's worth watching some breakdown on how HuGo sites are structured, and how the different layout elements like Partials, Posts, and Shortcodes work to generate your site. An important thing to know is that if you want to change how any of these elements work, you don't need to work destructively on the theme. It's possible to copy partials or CSS you want to change into override folders.
 
