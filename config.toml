@@ -21,25 +21,29 @@ features = ["social icons"]
 
 
   [[params.social]]
-    name = "link"
+    name = "artstation"
     title = "Portfolio"
     url = "http://fearian.com/"
   [[params.social]]
-  name = "twitter"
-  title = "Twitter"
-  url = "https://twitter.com/fearian"
+    name = "bluesky"
+    title = "Bluesky"
+    url = "https://fearian.bsky.social"
   [[params.social]]
-    name = "mastodon"
-    title = "Mastodon"
-    url = "https://mastodon.gamedev.place/@fearian"
-  [[params.social]]
-    name = "youtube"
-    title = "YouTube"
-    url = "https://youtube.com/fearian"
+    name = "twitter"
+    title = "Twitter"
+    url = "https://twitter.com/fearian"
   [[params.social]]
     name = "github"
     title = "GitHub"
     url = "https://github.com/fearian"
+  [[params.social]]
+    name = "itch.io"
+    title = "itch.io"
+    url = "https://fearian.itch.io"
+  [[params.social]]
+    name = "youtube"
+    title = "YouTube"
+    url = "https://youtube.com/fearian"
 
   # Set disableReadOtherPosts to true in order to hide the links to other posts.
   disableReadOtherPosts = false

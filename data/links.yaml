@@ -2,13 +2,16 @@
 links:
   - name: "Portfolio"
     link: "https://www.fearian.com/"
-    icon: "home"
-  - name: "Mastodon"
-    link: "https://mastodon.gamedev.place/@fearian"
-    icon: "mastodon"
+    icon: "artstation"
+  - name: "Bluesky"
+    link: "https://fearian.bsky.social"
+    icon: "bluesky"
   - name: "Twitter"
     link: "https://www.twitter.com/fearian"
     icon: "twitter"
+  - name: "Itch.io"
+    link: "https://fearian.itch.io"
+    icon: "itch.io"
   - name: "Youtube"
     link: "https://www.youtube.com/fearian"
     icon: "youtube"
@@ -23,10 +26,10 @@ links:
 {
   "Portfolio": {
     link: "https://www.fearian.com/",
-    icon: "home"
+    icon: "artstation"
   },
-  "Mastodon": {
-    link: "https://mastodon.gamedev.place/@fearian",
-    icon: "mastodon"
+  "Bluesky": {
+    link: "https://fearian.bsky.social",
+    icon: "bluesky"
   }
 }
